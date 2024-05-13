@@ -2,7 +2,6 @@ import cv2
 import numpy as np
  
 win_name = "scanning"
-# frame = cv2.imread("/home/juno/Perspective Transformation/images/download.png")
 frame = cv2.imread("/home/juno/Perspective Transformation/0416_10km/frame_7.93.jpg")
 draw = frame.copy()
 

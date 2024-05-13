@@ -7,6 +7,8 @@ win_name = "length_estimation"
 frame = cv2.imread(img_path)
 width = frame.shape[1]
 
+time_start = 7.20
+
 full_length = 12 # m
 estimated_length = 0 # m
 
@@ -16,7 +18,7 @@ def onMouse(event, x, y, flags, param):
         cv2.circle(frame, (x, y), 10, (0, 255, 0), -1)
         cv2.imshow(win_name, frame)
         estimated_length = (x/width)*full_length # m
-        estimated_velocity = (estimated_length/1000.0) / ((float(img_time)-7.20)/3600.0) # km/h
+        estimated_velocity = (estimated_length/1000.0) / ((float(img_time)-time_start)/3600.0) # km/h
         print("length : %.1fm" % estimated_length)
         print("velocity : %.1f" % estimated_velocity)
         

@@ -1,6 +1,6 @@
 # Perspective_Transformation
 
-### pt.py
+### perspective_transformation.py
 
 * 시계 반대방향으로 찍어주면 됨
 * 매 번 점을 찍어줄 필요는 없을 것 같음.
@@ -16,7 +16,7 @@
 * 동영상 경로와 아웃풋 폴더 이름을 command parameter로 넣어줘야 할듯.
 
 
-### length_estimation.py
+### speed_estimation.py
 
 * transformed img를 이용하여 차량이 출발점으로부터 얼마나 이동했는지 거리 측정
 * 또한 현재 시간에서 출발 시각을 뺀 값을 이용하여 속도 측정

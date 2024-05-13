@@ -2,7 +2,7 @@ import cv2
 import numpy as np
  
 win_name = "scanning"
-img_time = "9.27"
+img_time = "7.20"
 frame = cv2.imread("/Users/juno/Perspective_Transformation/0416_10km/frame_" + img_time + ".jpg")
 draw = frame.copy()
 

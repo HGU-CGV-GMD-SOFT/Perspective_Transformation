@@ -2,11 +2,13 @@ import cv2
 import numpy as np
  
 win_name = "scanning"
-frame = cv2.imread("/home/juno/Perspective Transformation/0416_10km/frame_7.93.jpg")
+img_time = "10.97"
+frame = cv2.imread("/Users/juno/Perspective_Transformation/0416_10km/frame_" + img_time + ".jpg")
 draw = frame.copy()
 
 pts_cnt = 0
 pts = np.zeros((4, 2), dtype=np.float32)
+
 
 def onMouse(event, x, y, flags, param):
     global pts_cnt
@@ -20,10 +22,20 @@ def onMouse(event, x, y, flags, param):
         pts_cnt += 1
         if pts_cnt == 4:
 
-            topLeft = pts[0]
-            bottomRight = pts[2]
-            topRight = pts[3]
-            bottomLeft = pts[1]
+            # topLeft = pts[0]
+            # bottomRight = pts[2]
+            # topRight = pts[3]
+            # bottomLeft = pts[1]
+
+            topLeft = [488, 568]
+            bottomRight = [1216,  996]
+            topRight = [1691,  786]
+            bottomLeft = [122, 608]
+
+            print("topLeft =", topLeft)
+            print("bottomRight =", bottomRight)
+            print("topRight =", topRight)
+            print("bottomLeft =", bottomLeft)
 
             w = int(np.linalg.norm(np.array(topRight) - np.array(topLeft)))
             h = int(np.linalg.norm(np.array(bottomLeft) - np.array(topLeft)))
@@ -37,7 +49,9 @@ def onMouse(event, x, y, flags, param):
             M = cv2.getPerspectiveTransform(pts1,pts2)
             dst = cv2.warpPerspective(frame,M,(int(w),int(h)))
             
+            cv2.imwrite("./transformed_images/" + img_time + ".jpg", dst)
             cv2.imshow("dst", dst)
+            
             
 
 cv2.imshow(win_name, frame)

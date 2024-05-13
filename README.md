@@ -25,7 +25,6 @@
 
 [GoogleDrive Link](https://drive.google.com/drive/folders/1DFn38g7Dl_5CvPWnmF2T5hJPOG5WOrpl?usp=sharing)
 
-![1715567855992](image/README/1715567855992.png)
 
 ![1715598915426](image/README/1715598915426.png)
 

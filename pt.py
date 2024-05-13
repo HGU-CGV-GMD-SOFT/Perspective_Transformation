@@ -2,7 +2,7 @@ import cv2
 import numpy as np
  
 win_name = "scanning"
-img_time = "10.97"
+img_time = "9.27"
 frame = cv2.imread("/Users/juno/Perspective_Transformation/0416_10km/frame_" + img_time + ".jpg")
 draw = frame.copy()
 
@@ -23,14 +23,14 @@ def onMouse(event, x, y, flags, param):
         if pts_cnt == 4:
 
             # topLeft = pts[0]
-            # bottomRight = pts[2]
-            # topRight = pts[3]
-            # bottomLeft = pts[1]
+            bottomRight = pts[2]
+            topRight = pts[3]
+            bottomLeft = pts[1]
 
-            topLeft = [488, 568]
-            bottomRight = [1216,  996]
-            topRight = [1691,  786]
-            bottomLeft = [122, 608]
+            topLeft = [480. , 552.]
+            # bottomRight = [1212. , 979.]
+            # topRight = [1690. , 768.]
+            # bottomLeft = [120. , 592.]
 
             print("topLeft =", topLeft)
             print("bottomRight =", bottomRight)

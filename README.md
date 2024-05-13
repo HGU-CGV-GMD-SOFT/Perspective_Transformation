@@ -15,6 +15,12 @@
 * 이름 파싱해서 쓰면 될듯.
 * 동영상 경로와 아웃풋 폴더 이름을 command parameter로 넣어줘야 할듯.
 
+
+### length_estimation.py
+
+* transformed img를 이용하여 차량이 출발점으로부터 얼마나 이동했는지 거리 측정
+* 또한 현재 시간에서 출발 시각을 뺀 값을 이용하여 속도 측정
+
 ### Dataset Link
 
 [GoogleDrive Link](https://drive.google.com/drive/folders/1DFn38g7Dl_5CvPWnmF2T5hJPOG5WOrpl?usp=sharing)
@@ -25,14 +31,12 @@
 
 ![1715567855992](image/README/1715568614106.png)
 
-![1715600733203](image/README/1715600733203.png)
+![1715603937734](image/README/1715603937734.png)![1715603948581](image/README/1715603948581.png)
 
-![1715600742538](image/README/1715600742538.png)
+![1715603958922](image/README/1715603958922.png)
 
-![1715600749955](image/README/1715600749955.png)
+![1715603979049](image/README/1715603979049.png)
 
-![1715600755989](image/README/1715600755989.png)
+![1715603988751](image/README/1715603988751.png)
 
-![1715600772790](image/README/1715600772790.png)
-
-![1715600783619](image/README/1715600783619.png)
+![1715603997752](image/README/1715603997752.png)

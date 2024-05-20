@@ -1,5 +1,5 @@
 import cv2
-img_time = "9.27" # s
+img_time = "11.77" # s
 img_path = "./transformed_images/"+ img_time +".jpg"
 print(img_path)
 win_name = "length_estimation"
@@ -7,7 +7,7 @@ win_name = "length_estimation"
 frame = cv2.imread(img_path)
 width = frame.shape[1]
 
-time_start = 7.20
+time_start = 10.67
 
 full_length = 12 # m
 estimated_length = 0 # m

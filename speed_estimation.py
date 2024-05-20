@@ -19,8 +19,8 @@ def onMouse(event, x, y, flags, param):
         cv2.imshow(win_name, frame)
         estimated_length = (x/width)*full_length # m
         estimated_velocity = (estimated_length/1000.0) / ((float(img_time)-time_start)/3600.0) # km/h
-        print("length : %.1fm" % estimated_length)
-        print("velocity : %.1fkm/h" % estimated_velocity)
+        print("length : %.1f [m]" % estimated_length)
+        print("velocity : %.1f [km/h]" % estimated_velocity)
         
 
 

@@ -1,5 +1,5 @@
 import cv2
-img_time = "11.77" # s
+img_time = "12.93" # s
 img_path = "./transformed_images/"+ img_time +".jpg"
 print(img_path)
 win_name = "length_estimation"
